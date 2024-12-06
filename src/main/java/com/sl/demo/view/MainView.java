@@ -29,6 +29,11 @@ public class MainView extends VerticalLayout {
 		});
 		
 		add(button);
+		
+		// Add a Div component, represent a form to People insert
+		PersonView personView = new PersonView();
+		personView.getElement().getStyle().set("background-color", "silver");
+		add(personView);
 	}
 	
 	private void verifyName() {
@@ -36,6 +41,11 @@ public class MainView extends VerticalLayout {
 		String text = button.getText();
 		if (!text.equals("Say Hello!")) {
 			name = new TextField("Digite seu nome:");
+			name.setMinLength(3);
+			name.setMaxLength(14);
+			name.addValueChangeListener(event -> {
+				System.out.println("Value has been changed... " + event.getValue());
+			});
 			add(name);
 			sayHello = new Button("Say Hello!", event -> {
 				span.setText("Hello " + name.getValue());
