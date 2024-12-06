@@ -7,3 +7,29 @@ curl -H 'Content-Type: application/json' \
   
 curl -H 'Content-Type: application/json' \
   -X GET http://localhost:8080/tables
+  
+  
+Create new Spring Initializer Project
+
+Dependencies: Web, H2, Jpa
+
+Vaadin dependency:
+		<!-- https://mvnrepository.com/artifact/com.vaadin/vaadin-spring-boot-starter -->
+		<dependency>
+		    <groupId>com.vaadin</groupId>
+		    <artifactId>vaadin-spring-boot-starter</artifactId>
+		    <version>24.5.7</version>
+		</dependency>
+		
+Create a new Route for test:
+
+@Route("/ui")
+public class MainView extends VerticalLayout {
+	public MainView() {
+		add(new Text("Hello world from Vaddin and Spring Boot..."));
+	}
+}
+
+Well done
+
+

@@ -50,6 +50,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.vaadin/vaadin-spring-boot-starter -->
+		<dependency>
+		    <groupId>com.vaadin</groupId>
+		    <artifactId>vaadin-spring-boot-starter</artifactId>
+		    <version>24.5.7</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
