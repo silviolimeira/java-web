@@ -54,6 +54,12 @@ public class MainView extends VerticalLayout {
 		TabView tabView = new TabView();
 		tabView.getElement().getStyle().set("background-color", "silver");
 		add(tabView);
+
+		// Add a Div component, represent a form and VerticalLayout
+		VerticalLayoutView verticalLayoutView = new VerticalLayoutView();
+		verticalLayoutView.getElement().getStyle().set("background-color", "silver");
+		add(verticalLayoutView);
+
 	}
 	
 	private void verifyName() {
