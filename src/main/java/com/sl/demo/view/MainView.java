@@ -50,6 +50,10 @@ public class MainView extends VerticalLayout {
 		gridView.getElement().getStyle().set("background-color", "silver");
 		add(gridView);
 
+		// Add a Div component, represent a form and Tabs
+		TabView tabView = new TabView();
+		tabView.getElement().getStyle().set("background-color", "silver");
+		add(tabView);
 	}
 	
 	private void verifyName() {
