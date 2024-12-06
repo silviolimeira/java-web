@@ -21,7 +21,7 @@ public class ComboBoxView extends Div {
 	public ComboBoxView() {
 
 
-		title = new Span("Text Area Example");
+		title = new Span("Combobox Example");
 
 		List<Person> persons = new ArrayList<>();
 		persons.add(new Person("Silvio", 50));

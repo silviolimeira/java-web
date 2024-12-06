@@ -17,7 +17,7 @@ public class CheckBoxView extends Div {
 
 	public CheckBoxView() {
 
-		title = new Span("Text Area Example");
+		title = new Span("Checkbox Example");
 
 		checkbox = new Checkbox();
 		checkbox.setLabel("I agree the terms");
