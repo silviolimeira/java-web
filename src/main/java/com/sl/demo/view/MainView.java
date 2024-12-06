@@ -39,6 +39,12 @@ public class MainView extends VerticalLayout {
 		TextAreaView textAreaView = new TextAreaView();
 		textAreaView.getElement().getStyle().set("background-color", "silver");
 		add(textAreaView);
+
+		// Add a Div component, represent a form and Checkbox
+		CheckBoxView checkBoxView = new CheckBoxView();
+		checkBoxView.getElement().getStyle().set("background-color", "silver");
+		add(checkBoxView);
+
 	}
 	
 	private void verifyName() {
