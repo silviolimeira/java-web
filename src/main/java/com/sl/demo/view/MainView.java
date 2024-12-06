@@ -45,6 +45,10 @@ public class MainView extends VerticalLayout {
 		checkBoxView.getElement().getStyle().set("background-color", "silver");
 		add(checkBoxView);
 
+		// Add a Div component, represent a form and Checkbox
+		ComboBoxView comboBoxView = new ComboBoxView();
+		comboBoxView.getElement().getStyle().set("background-color", "silver");
+		add(comboBoxView);
 	}
 	
 	private void verifyName() {

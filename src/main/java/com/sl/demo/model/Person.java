@@ -5,9 +5,15 @@ import java.util.Objects;
 public class Person {
 	
 	String name;
+	int age;
 
 	public Person() {
 		
+	}
+
+	public Person(String name, int age) {
+		this.name = name;
+		this.age = age;
 	}
 
 	public String getName() {
@@ -18,26 +24,29 @@ public class Person {
 		this.name = name;
 	}
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(name);
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Person other = (Person) obj;
-		return Objects.equals(name, other.name);
+	public boolean equals(Object o) {
+		if (o == null || getClass() != o.getClass()) return false;
+
+		Person person = (Person) o;
+		return name.equals(person.name);
+	}
+
+	@Override
+	public int hashCode() {
+		return name.hashCode();
 	}
 
 	@Override
 	public String toString() {
-		return "Person [name=" + name + "]";
+		return name + " == " + age;
 	}
-
 }
