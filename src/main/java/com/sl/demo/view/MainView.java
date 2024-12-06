@@ -34,6 +34,11 @@ public class MainView extends VerticalLayout {
 		PersonView personView = new PersonView();
 		personView.getElement().getStyle().set("background-color", "silver");
 		add(personView);
+
+		// Add a Div component, represent a form and TextArea
+		TextAreaView textAreaView = new TextAreaView();
+		textAreaView.getElement().getStyle().set("background-color", "silver");
+		add(textAreaView);
 	}
 	
 	private void verifyName() {
